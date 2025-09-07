@@ -79,7 +79,7 @@ def load(df, mysql_config, db_name, table_name):
         print(f"[INFO] - Data loaded successfully into `{table_name}`")
 
     except Exception as e:
-        print("[ERROR] - ❌ Failed to load data into MySQL:", str(e))
+        print("[ERROR] - Failed to load data into MySQL:", str(e))
         raise
 
 
@@ -95,3 +95,4 @@ def run_etl():
 
 if __name__ == "__main__":
     run_etl()
+
